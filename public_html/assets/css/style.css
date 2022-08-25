@@ -11159,7 +11159,7 @@ p {
   border-bottom: 2px solid #dee2e6;
   border-radius: 0;
   padding-bottom: 4px;
-  margin: 0 auto 20px;
+  margin: 60px auto 20px;
   max-width: 400px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -11203,11 +11203,18 @@ p {
   color: #fff;
 }
 
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
 .portfolio .portfolio-container .portfolio-item {
   position: relative;
   padding-left: 0;
   padding-right: 0;
-  margin: 10px -5px;
+  margin: 0px 0px;
   overflow: hidden;
   border-radius: 2px;
   -webkit-backface-visibility: hidden;

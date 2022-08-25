@@ -59,9 +59,9 @@
                     <li class="nav-item">
                         <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="#blog" class="nav-link">Blog</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item last-item">
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
@@ -497,25 +497,25 @@
 
     <!-- Portfolio Section -->
     <section class="section bg-custom-gray" id="portfolio">
-        <div class="container">
+        <div class="container" id="pictures">
             <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
             <div class="portfolio">
-                <!-- <div class="filters">
-                    <a href="#" data-filter=".new" class="active">
-                        New
+                <div class="filters">
+                    <a href="#pictures" data-filter=".new" class="active">
+                        Pictures
                     </a>
-                    <a href="#" data-filter=".advertising">
-                        Advertising
+                    <a href="#games" data-filter=".games">
+                        Games
                     </a>
-                    <a href="#" data-filter=".branding">
-                        Branding
-                    </a>
-                    <a href="#" data-filter=".web">
+                    <a href="#web" data-filter=".web">
                         Web
                     </a>
-                </div> -->
+                    <!-- <a href="#" data-filter=".branding">
+                        Branding
+                    </a> -->
+                </div>
                 <div class="portfolio-container"> 
-                    <div class="col-md-6 col-lg-4 web new">
+                    <div class="col-md-12 col-lg-12 web new">
                         <div class="portfolio-item">
                             <img src="public_html/assets/imgs/01.jpg" class="img-fluid" alt="Herb">
                             <div class="content-holder">
@@ -527,7 +527,7 @@
                             </div>   
                         </div>             
                     </div>
-                    <div class="col-md-6 col-lg-4 web new">
+                    <div class="col-md-12 col-lg-12 web new">
                         <div class="portfolio-item">
                             <img src="public_html/assets/imgs/02.jpg" class="img-fluid" alt="Hut">
                             <div class="content-holder">
@@ -539,7 +539,7 @@
                             </div> 
                         </div>                         
                     </div>
-                    <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="col-md-12 col-lg-12 advertising new">
                         <div class="portfolio-item">
                             <img src="public_html/assets/imgs/03.jpg" class="img-fluid" alt="Mirror">                         
                             <div class="content-holder">
@@ -551,7 +551,7 @@
                             </div>    
                         </div>              
                     </div> 
-                    <div class="col-md-6 col-lg-4 web">
+                    <div class="col-md-12 col-lg-12 web new">
                         <div class="portfolio-item">
                             <img src="public_html/assets/imgs/04.jpg" class="img-fluid" alt="Carafe">
                             <div class="content-holder">
@@ -563,7 +563,7 @@
                             </div>
                         </div>                                                     
                     </div>
-                    <div class="col-md-6 col-lg-4 web">
+                    <div class="col-md-12 col-lg-12 web new">
                         <div class="portfolio-item">
                             <img src="public_html/assets/imgs/05.jpg" class="img-fluid" alt="Breakfast">
                             <div class="content-holder">
@@ -576,7 +576,7 @@
                         </div>                                                     
                     </div>
 
-                    <div class="col-md-6 col-lg-4 advertising"> 
+                    <div class="col-md-12 col-lg-12 col-hg-6 web new"> 
                         <div class="portfolio-item">
                             <img src="public_html/assets/imgs/06.jpg" class="img-fluid" alt="Ardèche breakfast">                               
                             <div class="content-holder">
@@ -588,7 +588,7 @@
                             </div>
                         </div>                                                       
                     </div> 
-                    <div class="col-md-6 col-lg-4 web new">
+                    <div class="col-md-12 col-lg-12 web new">
                         <div class="portfolio-item">
                             <img src="public_html/assets/imgs/07.jpg" class="img-fluid" alt="Bed">  
                            <div class="content-holder">
@@ -600,7 +600,7 @@
                             </div>
                         </div>                                                     
                     </div>
-                    <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="col-md-12 col-lg-12 advertising new">
                         <div class="portfolio-item">
                             <img src="public_html/assets/imgs/08.jpg" class="img-fluid" alt="Bunker">       
                            <div class="content-holder">
@@ -612,7 +612,7 @@
                             </div>
                         </div>                                                       
                     </div> 
-                    <div class="col-md-6 col-lg-4 advertising new"> 
+                    <div class="col-md-12 col-lg-12 advertising new"> 
                         <div class="portfolio-item">
                             <img src="public_html/assets/imgs/09.jpg" class="img-fluid" alt="Stargate">            
                             <div class="content-holder">
@@ -626,10 +626,32 @@
                                 
                     </div> 
                     
+                    
                    
                 </div> 
+                <div class="filters">
+                    
+                    <a href="#pictures" data-filter=".pictures" class="nav-link" >
+                        Pictures
+                    </a>
+                    <a href="#games" data-filter=".games" class="active">
+                        Games
+                    </a>
+                    <a href="#web" data-filter=".web">
+                        Web
+                    </a>
+                    <!-- <a href="#" data-filter=".branding">
+                        Branding
+                    </a> -->
+                </div>  
+
+                <iframe frameborder="0" src="https://itch.io/embed/1640804" width="552" height="167"><a href="https://oualt.itch.io/amazein">A Maze In by Oualt</a></iframe>
+                
+                
             </div>  
+            
         </div>            
+        
     </section>
     <!-- End of portfolio section -->
 
@@ -701,9 +723,12 @@
                 </div> -->
                 <!-- end of blog wrapper -->
 
-            </div>
+            <!-- </div>
         </div>
-    </section>
+    </section> -->
+
+    
+
 
     <div class="section contact" id="contact">
         <div id="map" class="map"></div>
