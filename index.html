@@ -7,12 +7,12 @@
     <meta name="author" content="Devcrud">
     <title>Walter Massenhove homepage</title>
     <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css"> -->
     <!-- Bootstrap + main styles -->
 	<link rel="stylesheet" href="public_html/assets/css/style.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
+    <!-- <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a> -->
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
@@ -31,6 +31,7 @@
             </div>
         </div>
     </header>
+    
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +50,7 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav brand">
-                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
+                    <img src="public_html/assets/imgs/avatar.png" alt="" class="brand-img">
                     <li class="brand-txt">
                         <h5 class="brand-title">Walter Massenhove</h5>
                         <div class="brand-subtitle">Web Designer | Developer</div>
@@ -69,10 +70,17 @@
             </div>
         </div>
     </nav>
+    
     <div class="container-fluid">
+
+        <div class="blured">aaaaAAAAAAAAAAAAA</div>
+        
         <div id="about" class="row about-section">
+            
             <div class="col-lg-4 about-card">
+                
                 <h3 class="font-weight-light">Who am I ?</h3>
+                
                 <span class="line mb-5"></span>
                 <h5 class="mb-3">A Web Designer / Developer Located In Our Lovely Earth</h5>
                 <p class="mt-20"></p>
@@ -103,16 +111,21 @@
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
+                            
+                        <a href="#web"  >
                         <h6>Web Development</h6>
                         <p class="subtitle"> HTML, CSS, JavaScript</p>
+                        </a>
                         <hr>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
+                        <a href="#games"  >
                         <h6>Unreal Engine 4/5</h6>
                         <p class="subtitle">Dungeon Rain / A Maze In</p>
+                        </a>
                         <hr>
                     </div>
                 </div>
@@ -149,10 +162,7 @@
                                 <br>Creation of HTML CSS website
                                 <br>User interface design
                                 <br>3D modeling
-                                <br>Blueprints
-
-                                 <br>
-                            Virtual Dream, Annonay.</P>
+                                <br>Blueprints</P>
                             <hr>
                             <h6 class="title text-danger">2020 - 2021</h6>
                             <P>VR Developer</P>
@@ -497,23 +507,89 @@
 
     <!-- Portfolio Section -->
     <section class="section bg-custom-gray" id="portfolio">
-        <div class="container" id="pictures">
+        <div class="container">
             <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
             <div class="portfolio">
-                <div class="filters">
-                    <a href="#pictures" data-filter=".new" class="active">
+                
+                
+                
+
+
+                
+                <div id="games"></div>
+
+                <div class="filters" id="games" >
+                    
+                    
+                    <a href="#games" data-filter=".games" class="active">
+                        Games
+                    </a>
+                    <a href="#web" data-filter=".web">
+                        Web
+                    </a>
+                    <a href="#pictures" data-filter=".pictures" class="nav-link" >
                         Pictures
                     </a>
+                    
+                </div>  
+
+                <div >
+                <div class="code">
+                <iframe class="code" frameborder="0" src="https://itch.io/embed/1640804" width="552" height="167"><a href="https://oualt.itch.io/amazein">A Maze In</a></iframe>
+                </div>
+                <iframe class="code" width="550" height="315" src="https://www.youtube.com/embed/QHVtcXJJhMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <div id="web"></div>
+
+                <div class="filters" >
+                    
+                    
+                    <a href="#games" data-filter=".games" >
+                        Games
+                    </a>
+                    <a href="#web" data-filter=".web" class="active">
+                        Web
+                    </a>
+                    <a href="#pictures" data-filter=".pictures" class="nav-link" >
+                        Pictures
+                    </a>
+                </div>
+                <div class="divcode">
+                    <a href="https://oualt.github.io/SiteWebTest.github.io/"        target="_blank">
+                        <img class="code" src="public_html/assets/imgs/travelAgency.PNG" width="442" height="115">
+                    </a>
+                </div> 
+                <div class="divcode">
+                    <a href="https://oualt.github.io/NetflixLike.github.io/"        target="_blank">
+                        <img class="code" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix"  width="442" height="115">
+                    </a>
+                </div>
+                <div class="divcode">
+                    <a href="https://oualt.github.io/VousEtesLeHeros.github.io/"        target="_blank">
+                        <img class="code" src="public_html/assets/imgs/VousEtesLeHeros.PNG" width="442" height="105">
+                    </a>
+                </div>
+                
+                
+                </div>
+
+                <div id="pictures"></div>
+                <div class="filters">
+                    
                     <a href="#games" data-filter=".games">
                         Games
                     </a>
                     <a href="#web" data-filter=".web">
                         Web
                     </a>
-                    <!-- <a href="#" data-filter=".branding">
-                        Branding
-                    </a> -->
+                    <a href="#pictures" data-filter=".new" class="active">
+                        Pictures
+                    </a>
+                    
                 </div>
+
+
+
                 <div class="portfolio-container"> 
                     <div class="col-md-12 col-lg-12 web new">
                         <div class="portfolio-item">
@@ -553,18 +629,6 @@
                     </div> 
                     <div class="col-md-12 col-lg-12 web new">
                         <div class="portfolio-item">
-                            <img src="public_html/assets/imgs/04.jpg" class="img-fluid" alt="Carafe">
-                            <div class="content-holder">
-                                <a class="img-popup" href="public_html/assets/imgs/04.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">Carafe</h6>
-                                    <p class="subtitle">Simple carafe</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div>
-                    <div class="col-md-12 col-lg-12 web new">
-                        <div class="portfolio-item">
                             <img src="public_html/assets/imgs/05.jpg" class="img-fluid" alt="Breakfast">
                             <div class="content-holder">
                                 <a class="img-popup" href="public_html/assets/imgs/05.jpg"></a>
@@ -575,7 +639,18 @@
                             </div>
                         </div>                                                     
                     </div>
-
+                    <div class="col-md-12 col-lg-12 web new">
+                        <div class="portfolio-item">
+                            <img src="public_html/assets/imgs/04.jpg" class="img-fluid" alt="Carafe">
+                            <div class="content-holder">
+                                <a class="img-popup" href="public_html/assets/imgs/04.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">Carafe</h6>
+                                    <p class="subtitle">Simple carafe</p>
+                                </div>
+                            </div>
+                        </div>                                                     
+                    </div>
                     <div class="col-md-12 col-lg-12 col-hg-6 web new"> 
                         <div class="portfolio-item">
                             <img src="public_html/assets/imgs/06.jpg" class="img-fluid" alt="Ardèche breakfast">                               
@@ -624,35 +699,28 @@
                             </div>
                         </div>
                                 
+                        
                     </div> 
                     
                     
+
+                    
+
+
                    
                 </div> 
-                <div class="filters">
-                    
-                    <a href="#pictures" data-filter=".pictures" class="nav-link" >
-                        Pictures
-                    </a>
-                    <a href="#games" data-filter=".games" class="active">
-                        Games
-                    </a>
-                    <a href="#web" data-filter=".web">
-                        Web
-                    </a>
-                    <!-- <a href="#" data-filter=".branding">
-                        Branding
-                    </a> -->
-                </div>  
 
-                <iframe frameborder="0" src="https://itch.io/embed/1640804" width="552" height="167"><a href="https://oualt.itch.io/amazein">A Maze In by Oualt</a></iframe>
-                
-                
             </div>  
             
         </div>            
         
+
+        
     </section>
+
+    
+
+    
     <!-- End of portfolio section -->
 
     <!-- <section class="section" id="blog">
@@ -726,7 +794,16 @@
             <!-- </div>
         </div>
     </section> -->
-
+    
+    <div class="infos-border-wrapper">
+        <div class="backgound-blured"></div>
+        <div class="infos-movie-container">
+        <img src="https://image.tmdb.org/t/p/w300//8v0MtSxuvfEzVDtP4uiu1Z7r1Wl.jpg" id="poster">
+          <div id="description" class="infos">TEST</div>
+      
+        </div>
+</div>
+    
     
 
 
@@ -793,29 +870,29 @@
 
         </div>
     </div>
-    <footer class="footer py-3">
+    <!-- <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-light">
                 &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By <a href="http://devcrud.com" target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">DevCRUD</span></a> 
             </p>
         </div>
-    </footer>
+    </footer> -->
 
 	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="public_html/assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <!-- <script src="public_html/assets/vendors/bootstrap/bootstrap.bundle.js"></script> -->
 
     <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="public_html/assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
     <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    <!-- <script src="public_html/assets/vendors/isotope/isotope.pkgd.js"></script> -->
     
     <!-- Google mpas -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script> -->
 
     <!-- code.js -->
-    <script src="assets/js/code.js"></script>
+    <script src="public_html/assets/js/code.js"></script>
 
 </body>
 </html>

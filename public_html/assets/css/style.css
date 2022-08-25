@@ -11208,18 +11208,22 @@ p {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
   grid-auto-rows: minmax(100px, auto);
+  
 }
+
+
 
 .portfolio .portfolio-container .portfolio-item {
   position: relative;
   padding-left: 0;
   padding-right: 0;
-  margin: 0px 0px;
+  margin: 0px -15px;
   overflow: hidden;
   border-radius: 2px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
+
 
 .portfolio .portfolio-container .portfolio-item .content-holder {
   position: absolute;
@@ -11506,8 +11510,21 @@ pre .code {
   position: relative;
   height: 80vh;
   min-height: 600px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/head.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/head.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.header-filtered {
+  position: relative;
+  height: 80vh;
+  min-height: 600px;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/headFiltered.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/headFiltered.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11686,4 +11703,85 @@ pre .code {
 .center-div {
   margin: 0 auto;
   width: 100px;
+}
+
+.code {
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px auto 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.code:hover {
+  transform: scale(1.025);
+}
+
+.agrandi
+  {
+    position: relative;
+    float: left;
+    top: -20px;
+    left: -715px;
+    cursor: pointer;
+    margin-right: 70px;
+    width: 826.5px;
+    height: 1169.5px;
+    border-radius: 5px;
+    background-color: transparent;
+    z-index: 2;
+  }
+
+  .blured {
+    position: fixed;
+    filter: blur(5px);
+    -webkit-filter: blur(15px);
+    pointer-events: none;
+    top: auto;
+    z-index: 100000;
+    width: 610px;
+
+  }
+
+  .infos-border-wrapper {
+    
+    /* -webkit-filter: blur(1px); */
+    position: fixed;
+    width: 610px;
+    left:50%;
+    bottom:auto; /* A VOIR */
+    padding: 1rem;
+    /* background: linear-gradient(to bottom, red, #141414); */
+    padding: 3px;
+    z-index: 1000000;
+    margin-left: -300px;
+    border-radius: .5rem .5rem;
+    top: 25%;
+    
+  }
+
+  #poster {
+    height: 400px;
+    border-radius: 1rem 1rem;
+    padding: 10px;
+}
+
+  .infos-border-wrapper:active {
+    scale: (1.1);
+    transition: transform 0.8s ease-out;
+
+}
+
+.backgound-blured {
+    position: absolute;
+    top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, red, #141414);
+  filter: blur(3px);
+  z-index: -1;
+  border-radius: .5rem .5rem;
 }
