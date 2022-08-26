@@ -165,9 +165,11 @@ function retreci(e){
 }
 
 var portfolioItems = document.getElementsByClassName("portfolio-item");
+
 for (var i = 0, len = portfolioItems.length; i < len; i++) {
-    portfolioItems[i].addEventListener("click", revealImgWatcher);
+    portfolioItems[i].addEventListener("click", revealImgWatcher);    
 }
+
 
 window.addEventListener("hashchange", function () {
   window.scrollTo(window.scrollX, window.scrollY - 100);
@@ -181,11 +183,31 @@ function reveal(e){
   e.style.display = "block";
 }
 
+var poster = document.querySelector('#poster');
+
 function revealImgWatcher(e){
-  itemSrc = e.target.src;
+  item = e.target;
+  // get parent div
+  itemDiv = item.parentNode;
+  // get img src
+  itemSrc = itemDiv.getElementsByTagName('img')[0].src;
  // blured.style.display = "block";
   infosBorderWrapper.style.display = "block";
+  poster.src= itemSrc;
   reveal(infosBorderWrapper);
+  poster = document.querySelector('#poster');
+  poster.addEventListener('click', hideBorderWrapper);
+  
+}
+
+function hideBorderWrapper(){
+  infosBorderWrapper.style.display = "none";
+}
+
+
+function retrieveSrcInArray(itemToRetrieve){
+  var indexToRetrieve = portfolioItems.prototype.indexOf(itemToRetrieve);
+  return srcArray[indexToRetrieve];
 }
 
 function hideImgWatcher(e){
@@ -195,6 +217,11 @@ function hideImgWatcher(e){
 }
 
 hideImgWatcher();
+
+
+
+
+
 
 // change header picture on mouse over/out
 
