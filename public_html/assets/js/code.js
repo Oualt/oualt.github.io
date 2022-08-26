@@ -196,4 +196,26 @@ function hideImgWatcher(e){
 
 hideImgWatcher();
 
+// change header picture on mouse over/out
+
+var head = document.querySelector(".header");
+var downloadBtnCV = document.querySelector("#download_cv");
+
+downloadBtnCV.addEventListener("mouseover", changeClass);
+
+function changeClass(e) { 
+  item = e.target;
+  //head.className = "header-filtered"
+  head.style.backgroundImage="linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(public_html/assets/imgs/headFiltered.jpg)";
+  item.removeEventListener("mouseover", changeClass);
+  item.addEventListener("mouseout", lastClass);
+ }
+
+function lastClass(e){
+  item = e.target;
+  //head.className = "header"
+  head.style.backgroundImage="linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(public_html/assets/imgs/head.jpg)";
+  item.removeEventListener("mouseout", lastClass);
+  item.addEventListener("mouseover", changeClass);
+}
 
