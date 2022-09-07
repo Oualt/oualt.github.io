@@ -11777,6 +11777,7 @@ pre .code {
     margin-left: -400px;
     border-radius: .5rem .5rem;
     top: 14%;
+    display: none
   }
 
   #poster {

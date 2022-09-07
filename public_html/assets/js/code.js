@@ -216,7 +216,7 @@ function hideImgWatcher(e){
   //setClassName(startdiv, 'startdiv');
 }
 
-hideImgWatcher();
+//hideImgWatcher();
 
 
 
