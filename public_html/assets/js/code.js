@@ -227,8 +227,10 @@ hideImgWatcher();
 
 var head = document.querySelector(".header");
 var downloadBtnCV = document.querySelector("#download_cv");
+var downloadBtnCVFr = document.querySelector('#download_cvfr');
 
 downloadBtnCV.addEventListener("mouseover", changeClass);
+downloadBtnCVFr.addEventListener("mouseover", changeClass);
 
 function changeClass(e) { 
   item = e.target;
